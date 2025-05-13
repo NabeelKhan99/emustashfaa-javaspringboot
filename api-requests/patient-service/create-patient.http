@@ -1,0 +1,14 @@
+### POST request
+POST http://localhost:4000/patients
+Content-Type: application/json
+
+{
+  "name": "Mr Jelly",
+  "address": "123 JElly Road",
+  "email": "jelly@mail.com",
+  "dateOfAdmission": "2024-10-10",
+  "dateOfBirth": "1990-10-01",
+
+}
+
+###
