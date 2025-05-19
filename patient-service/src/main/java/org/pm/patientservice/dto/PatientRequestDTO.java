@@ -3,6 +3,7 @@ package org.pm.patientservice.dto;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import org.pm.patientservice.dto.validators.CreatePatientValidationGroup;
 
 public class PatientRequestDTO {
     @NotBlank(message = "Please enter a name.")
@@ -19,7 +20,7 @@ public class PatientRequestDTO {
     @NotBlank(message = "Please enter the date of Birth")
     private String dateOfBirth;
 
-    @NotBlank(message = "Please enter the date of Admission")
+    @NotBlank(groups = CreatePatientValidationGroup.class, message = "Please enter the date of Admission")
     private String dateOfAdmission;
 
     public String getName() {

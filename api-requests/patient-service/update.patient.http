@@ -1,15 +1,11 @@
-### POST request
-POST http://localhost:4000/patients
+#Update an exisit patients.
+PUT http://localhost:4000/patients/547900cb-8b3e-42e6-b7a9-78af78c21708
 Content-Type: application/json
 
 {
-  "name": "Puttar Punjani",
+  "name": "Puttar Punjabi",
   "address": "Rawalpindi",
   "email": "puttarpunjabi@gmail.com",
-  "dateOfAdmission": "2024-11-10",
   "dateOfBirth": "1992-10-01"
 
 }
-
-
-###
